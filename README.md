@@ -2,6 +2,11 @@
 
 Projeto criado para criar testes automatizados com base no retorno de execução de query em ambiente de **BigQuery**. Crie Mock de Dados para linhas em tabelas e teste a asserção dos resultados obtidos com esperados.
 
+# Requirements
+
+Necessário instalação e configuração do Google Cloud SDK:
+https://cloud.google.com/sdk/docs/install?hl=pt-br
+
 ## Sample
 
 ```yaml
@@ -96,5 +101,5 @@ python -m main
 | `--testcase` / `-t`        | Opcional        | Especifica um ID de teste criado em test.yaml. Exemplo: `--testcase ACT_001 ACT_002`                                           |
 | `--datasetid` / `-ds`      | Opcional        | Personaliza nome de dataset do BigQuery para a execução. Exemplo: `--datasetid ds_my_test`. Por default assume em config.yaml. |
 | `--run` / `-r`             | Opcional        | Gera um teste simulado sem executar resultados, apenas o envio do mock de dados. Exemplo: `--run False`. Por default é `True`. |
-| `--schema` / `-sch`        | Opcional        | Atualiza schema de tabelas localmente. Exemplo: `--schema`                                                                     |
+| `--schema` / `-sch`        | Opcional        | Atualiza schema de tabelas localmente.                                                                    |
 | `--persist-dataset` / `-p` | Opcional        | Mantém o resultado do dataset após a execução do teste no ambiente BigQuery.                                                   |
