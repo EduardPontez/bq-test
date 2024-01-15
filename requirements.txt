@@ -1,0 +1,9 @@
+attrs==20.3.0
+numpy>=1.20.2,<=1.22.3
+pandas>=1.2.4,<=1.4.2
+pyarrow>=3.0.0,<=6.0.0
+python-dateutil>=2.8.1,<=2.8.2
+PyYAML>=5.3.1,<=6.0
+protobuf>=3.17.3,<=3.20.1
+google-cloud-bigquery>=2.22.0,<=2.34.3
+plotly==5.9.0

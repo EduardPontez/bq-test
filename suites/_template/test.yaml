@@ -1,0 +1,26 @@
+My_First_Test:
+
+  documentation:
+    tags: []
+    desc: >
+      .
+
+  unittests:
+    my_string_should_be_in_sequence: [test_1, test_2]
+    my_integer_should_be_in_sequence: [1, 2]
+    my_string_date_should_be_distinct: ~
+    identification_date_should_not_have_datetime_before: "2018-01-01 00:00:00"
+
+  settings:
+    base_date: Y-1
+
+  mockup:
+    - project.dataset.table:
+        my_string: test_1
+        my_date_datetime: M + 1
+        my_integer: 1
+
+    - project.dataset.table:
+        my_string: test_2
+        my_date_datetime: H + 3 *
+        my_integer: 2

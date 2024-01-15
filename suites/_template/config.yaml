@@ -1,0 +1,15 @@
+query:
+  location:
+    pipeline_file: ${VALUE}
+    pipeline_name: ${VALUE}
+    
+  persist:
+    - ${VALUE}
+    
+  fetch:
+    search: ${VALUE}
+    where: ${VALUE}   
+    order: ${VALUE}
+
+environment:
+  default_dataset_test: ${VALUE}
