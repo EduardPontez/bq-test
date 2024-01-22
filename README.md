@@ -20,7 +20,7 @@ My_First_Test:
       Then I must assert select result in unittests.
 
   unittests:
-    my_string_should_be_in_sequence: [test_1, test_2]
+    my_string_should_be_in_sequence: [text_1, text_2]
     my_integer_should_be_in_sequence: [1, 2]
     my_string_date_should_be_distinct: ~
     identification_date_should_not_have_datetime_before: "2018-01-01 00:00:00"
