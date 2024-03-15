@@ -21,7 +21,7 @@ My_First_Test:
 
   unittests:
     my_string_should_be_in_sequence: [text_1, text_2]
-    my_integer_should_be_in_sequence: [1, 2]
+    my_integer_should_be_in_sequence: [1000, 2000]
     my_string_date_should_be_distinct: ~
     identification_date_should_not_have_datetime_before: "2018-01-01 00:00:00"
 
@@ -44,22 +44,20 @@ My_First_Test:
 
 ### Output
 ```
-python -m tests.main -s ea_1_0_0 -t ACT_001
+python -m tests.main -s MySuite -t My_First_Test
 
-[  INFO  ] - 2023-08-25 08:41:49 - Starting Data Mock EA_1_0_0 ACT_001
+[  INFO  ] - 2023-08-25 08:41:49 - Starting Data Mock MySuite My_First_Test
 [  INFO  ] - 2023-08-25 08:41:49 - Mocked fato_producao_exame_glicose
 [  INFO  ] - 2023-08-25 08:41:49 - Mocked hi_aux_dim_patient
-[  INFO  ] - 2023-08-25 08:41:49 - Using default dataset ds_mock_hi_tests
-[  INFO  ] - 2023-08-25 08:42:19 - 1 row(s) sent to hi_aux_dim_patient
-[  INFO  ] - 2023-08-25 08:42:30 - 1 row(s) sent to fato_producao_exame_glicose
+[  INFO  ] - 2023-08-25 08:41:49 - Using default dataset ds_my_dataset_test
+[  INFO  ] - 2023-08-25 08:42:19 - 2 row(s) sent to table_test
 [  INFO  ] - 2023-08-25 08:42:38 - Ran Artefact Query
-[  INFO  ] - 2023-08-25 08:42:44 - Passed test_deleted_should_be_in_sequence
-[  INFO  ] - 2023-08-25 08:42:44 - Passed test_identification_date_should_be_distinct
+[  INFO  ] - 2023-08-25 08:42:44 - Passed test_my_string_should_be_in_sequence
+[  INFO  ] - 2023-08-25 08:42:44 - Passed test_my_integer_should_be_in_sequence
 [  INFO  ] - 2023-08-25 08:42:44 - Passed test_identification_date_should_not_have_datetime_before
-[  INFO  ] - 2023-08-25 08:42:44 - Passed test_valid_record_should_be_in_sequence
-[  INFO  ] - 2023-08-25 08:42:52 - Sent test result to interoper-data-processing-hml.ds_mock_hi_logs.log_result
+[  INFO  ] - 2023-08-25 08:42:52 - Sent test result to project.dataset.log_result
 [  INFO  ] - 2023-08-25 08:42:52 - Generated key aaa490e630fb1dddb0c6786ddf7efc98c0ed8c04
-[  INFO  ] - 2023-08-25 08:42:52 - Finished execution for user e.pontes@dasa.com.br
+[  INFO  ] - 2023-08-25 08:42:52 - Finished execution for user dev@email.com
 ```
 
 ## Yaml
