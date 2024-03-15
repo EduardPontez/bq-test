@@ -47,8 +47,8 @@ My_First_Test:
 python -m tests.main -s MySuite -t My_First_Test
 
 [  INFO  ] - 2023-08-25 08:41:49 - Starting Data Mock MySuite My_First_Test
-[  INFO  ] - 2023-08-25 08:41:49 - Mocked fato_producao_exame_glicose
-[  INFO  ] - 2023-08-25 08:41:49 - Mocked hi_aux_dim_patient
+[  INFO  ] - 2023-08-25 08:41:49 - Mocked table_test
+[  INFO  ] - 2023-08-25 08:41:49 - Mocked table_test
 [  INFO  ] - 2023-08-25 08:41:49 - Using default dataset ds_my_dataset_test
 [  INFO  ] - 2023-08-25 08:42:19 - 2 row(s) sent to table_test
 [  INFO  ] - 2023-08-25 08:42:38 - Ran Artefact Query
